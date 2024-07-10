@@ -54,8 +54,10 @@ const loginUser=async(req,res)=>{
             const token=await jwt.sign({
                 user:{
                     id:userAvailable.id,
-                    username:userAvailable.username
-                }
+                    username:userAvailable.username,
+                    role:userAvailable.role
+                },
+                
             },process.env.ACCESS_STRING_TOKEN)
             
         

@@ -60,9 +60,9 @@ const deleteUserTicket=async(req,res)=>{
 //   else{
 //     const updatedTicket= await Ticket.findByIdAndUpdate(
 //       req.params.id,
-      
-      
-
+//       status,
+//       {new:true}
+    
 
 //     )
 //   }

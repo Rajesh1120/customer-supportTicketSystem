@@ -14,6 +14,7 @@ app.use(cors())
 
 app.use('/api/user/',require('./routes/userRoutes'))
 app.use('/api/user/',require("./routes/ticketsRoutes"))
+app.use('/api/user/',require('./routes/adminRouter'))
 
 app.listen(port, ()=>{
     console.log(`server started on ${port}`)
